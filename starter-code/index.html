@@ -29,11 +29,12 @@
       }
 
       .header-container {
-        font-family: "Roboto", sans-serif;
+        /* font-family: "Roboto", sans-serif; */
+        font-family: "Bellefair", serif;
         font-size: 1.25 rem;
         display: flex;
         justify-content: space-between;
-        margin: 40px 0 0 20px;
+        margin: 2.5rem 0 0 1.25rem;
       }
 
       .left {
@@ -82,12 +83,14 @@
 
       .row {
         color: white;
-        margin-top: 30vh;
+        margin-top: 10vh;
         font-family: "Bellefair", serif;
       }
 
-      .column1 {
+      #column1 {
         text-align: justify;
+        /* margin-top: 30vh;
+        background-color: darkred; */
       }
 
       .p-text {
@@ -113,18 +116,45 @@
         justify-content: flex-end;
       }
 
-      .explore-button p {
+      /* .explore-button p {
         text-transform: uppercase;
         word-spacing: 1.0625rem;
         padding-top: 3.5rem;
         margin-right: 5vh;
         display: inline-block;
+        display: flexs;
+        flex-direction: column;
         border-radius: 50%;
         width: 8.25rem;
         height: 8.25rem;
         text-align: center;
         color: black;
         background-color: white;
+        font-family: "Bellefair", serif;
+      } */
+
+      #col2 {
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+      }
+      .explore-button {
+        width: 9.375rem;
+        height: 9.375rem;
+        border-radius: 100%;
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        margin-right: 20px;
+      }
+      .explore-button:hover {
+        box-shadow: 0rem 0rem 0rem 2.5rem #979797;
+        transition: 0.5s;
+      }
+      .explore-button p {
+        text-align: center;
+        line-height: 9.375rem;
+        font-size: 1.25rem;
         font-family: "Bellefair", serif;
       }
     </style>
@@ -170,6 +200,13 @@
             edge of it. Well sit back, and relax because we'll give you <br />
             a truly out of this world experience!
           </p>
+          <div class="col2" id="column2">
+            <a href="#" class="explore-link">
+              <div class="explore-button">
+                <p>EXPLORE</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </main>
