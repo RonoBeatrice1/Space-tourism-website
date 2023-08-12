@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(./assets/home/background-home-desktop.jpg);
+      }
+
+      .header-container {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.25 rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 0 20px;
+      }
+
+      .left {
+        margin-left: 1.875 rem;
+      }
+
+      .left img {
+        width: 3.75rem;
+      }
+
+      .right {
+        display: flex;
+        justify-content: space-between;
+        backdrop-filter: blur(1.5rem);
+        padding: 2rem 1rem 2rem 2rem;
+        background-color: rgba(255, 255, 255, 0.03);
+      }
+
+      .p-header {
+        margin-right: 1.875rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      a:hover {
+        border-bottom: 0.1875rem solid white;
+      }
+
+      a:active {
+        border-bottom: 0.1875rem solid white;
+      }
+
+      .number {
+        color: white;
+        font-weight: 900;
+        margin-right: 0.3125rem;
+      }
+
+      /* .p-header span:not(.number) {
+  margin-right: 1.875rem;
+} */
+
+      .row {
+        color: white;
+        margin-top: 30vh;
+        font-family: "Bellefair", serif;
+      }
+
+      .column1 {
+        text-align: justify;
+      }
+
+      .p-text {
+        font-size: 1.75rem;
+        margin-left: 5vw;
+      }
+
+      .h1-text {
+        font-size: 9.375rem;
+        margin-left: 5vw;
+      }
+
+      .p-text2 {
+        font-size: 1.125rem;
+        padding-left: 0vw;
+        padding-right: 7vw;
+        margin-left: 5vw;
+      }
+
+      #column2 {
+        margin-top: 0vh;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .explore-button p {
+        text-transform: uppercase;
+        word-spacing: 1.0625rem;
+        padding-top: 3.5rem;
+        margin-right: 5vh;
+        display: inline-block;
+        border-radius: 50%;
+        width: 8.25rem;
+        height: 8.25rem;
+        text-align: center;
+        color: black;
+        background-color: white;
+        font-family: "Bellefair", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="left">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="right">
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">00</span> <span>Home</span>
+            </p></a
+          >
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">01</span><span>Crew</span>
+            </p></a
+          >
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">02</span><span>Destination</span>
+            </p></a
+          >
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">03</span><span>Technology</span>
+            </p></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="row" id="row">
+        <div class="col1" id="column1">
+          <p class="p-text">SO, YOU WANT TO TRAVEL TO</p>
+          <h1 class="h1-text">SPACE</h1>
+          <p class="p-text2">
+            Let's face it; if you want to go to space, you might as well <br />
+            genuinely go to outer space and not hover kind of on the <br />
+            edge of it. Well sit back, and relax because we'll give you <br />
+            a truly out of this world experience!
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
