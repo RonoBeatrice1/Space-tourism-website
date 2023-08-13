@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  01 Pick your destination
+      body {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat;
+        font-family: "Schoolbell", cursive;
+      }
 
-  Moon
-  Mars
-  Europa
-  Titan
+      .header-container {
+        /* font-family: "Roboto", sans-serif; */
+        /* font-family: "Bellefair", serif; */
+        font-family: "Schoolbell", cursive;
+        font-size: 1.25 rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5rem 0 0 1.25rem;
+      }
 
-  Moon
+      .left {
+        margin-left: 1.875 rem;
+      }
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+      .left img {
+        width: 3.75rem;
+      }
 
-  Avg. distance
-  384,400 km
+      .right {
+        display: flex;
+        justify-content: space-between;
+        backdrop-filter: blur(1.5rem);
+        padding: 2rem 1rem 2rem 2rem;
+        background-color: rgba(255, 255, 255, 0.03);
+      }
 
-  Est. travel time
-  3 days
-</body>
+      .p-header {
+        margin-right: 1.875rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      a:hover {
+        border-bottom: 0.1875rem solid white;
+      }
+
+      a:active {
+        border-bottom: 0.1875rem solid white;
+      }
+
+      .number {
+        color: white;
+        font-weight: 900;
+        margin-right: 0.3125rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="left">
+          <img src="./assets/shared/logo.svg" alt="logo" />
+        </div>
+        <div class="right">
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">00</span> <span>Home</span>
+            </p></a
+          >
+
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">02</span><span>Destination</span>
+            </p></a
+          >
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">01</span><span>Crew</span>
+            </p></a
+          >
+          <a href="#"
+            ><p class="p-header">
+              <span class="number">03</span><span>Technology</span>
+            </p></a
+          >
+        </div>
+      </div>
+    </header>
+    00 Home 01 Destination 02 Crew 03 Technology 01 Pick your destination Moon
+    Mars Europa Titan Moon See our planet as you’ve never seen it before. A
+    perfect relaxing trip away to help regain perspective and come back
+    refreshed. While you’re there, take in some history by visiting the Luna 2
+    and Apollo 11 landing sites. Avg. distance 384,400 km Est. travel time 3
+    days
+  </body>
 </html>
